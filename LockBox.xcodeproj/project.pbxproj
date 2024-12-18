@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C82E3F42BA3D1270006A320 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C82E3F32BA3D1270006A320 /* DeviceActivity.framework */; };
+		1C82E3F72BA3D1270006A320 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C82E3F62BA3D1270006A320 /* DeviceActivityMonitorExtension.swift */; };
+		1C82E3FC2BA3D1270006A320 /* LockBoxActivity.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1C82E3F12BA3D1270006A320 /* LockBoxActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1C8DFB0B2BA38D1F00907A29 /* LockBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DFB0A2BA38D1F00907A29 /* LockBoxApp.swift */; };
 		1C8DFB0D2BA38D1F00907A29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DFB0C2BA38D1F00907A29 /* ContentView.swift */; };
 		1C8DFB0F2BA38D2000907A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8DFB0E2BA38D2000907A29 /* Assets.xcassets */; };
@@ -14,9 +17,22 @@
 		1C8DFB1C2BA38D2100907A29 /* LockBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DFB1B2BA38D2100907A29 /* LockBoxTests.swift */; };
 		1C8DFB262BA38D2100907A29 /* LockBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DFB252BA38D2100907A29 /* LockBoxUITests.swift */; };
 		1C8DFB282BA38D2100907A29 /* LockBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DFB272BA38D2100907A29 /* LockBoxUITestsLaunchTests.swift */; };
+		1C966DC32BA3C2F100943FF9 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C966DC22BA3C2F100943FF9 /* MyModel.swift */; };
+		1C966DC52BA3C31700943FF9 /* MySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C966DC42BA3C31700943FF9 /* MySchedule.swift */; };
+		1CA6A58F2BA7C02E00B5ECBE /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6A58E2BA7C02D00B5ECBE /* ManagedSettings.framework */; };
+		1CA6A5912BA7C02E00B5ECBE /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6A5902BA7C02E00B5ECBE /* ManagedSettingsUI.framework */; };
+		1CA6A5942BA7C02E00B5ECBE /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA6A5932BA7C02E00B5ECBE /* ShieldConfigurationExtension.swift */; };
+		1CA6A5992BA7C02E00B5ECBE /* ShieldUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1CA6A58D2BA7C02D00B5ECBE /* ShieldUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1C82E3FA2BA3D1270006A320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C8DFAFF2BA38D1F00907A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C82E3F02BA3D1270006A320;
+			remoteInfo = LockBoxActivity;
+		};
 		1C8DFB182BA38D2100907A29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1C8DFAFF2BA38D1F00907A29 /* Project object */;
@@ -31,9 +47,39 @@
 			remoteGlobalIDString = 1C8DFB062BA38D1F00907A29;
 			remoteInfo = LockBox;
 		};
+		1CA6A5972BA7C02E00B5ECBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C8DFAFF2BA38D1F00907A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CA6A58C2BA7C02D00B5ECBE;
+			remoteInfo = ShieldUI;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1C8A7B992BA3AF2F00947D1F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C82E3FC2BA3D1270006A320 /* LockBoxActivity.appex in Embed Foundation Extensions */,
+				1CA6A5992BA7C02E00B5ECBE /* ShieldUI.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C3082E42BA3C05800359E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1C48000F2BA3D0A700505DB5 /* LockBoxDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockBoxDebug.entitlements; sourceTree = "<group>"; };
+		1C82E3F12BA3D1270006A320 /* LockBoxActivity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LockBoxActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C82E3F32BA3D1270006A320 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		1C82E3F62BA3D1270006A320 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		1C82E3F82BA3D1270006A320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C82E3F92BA3D1270006A320 /* LockBoxActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockBoxActivity.entitlements; sourceTree = "<group>"; };
+		1C8A7BA62BA3B3E300947D1F /* LockBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockBox.entitlements; sourceTree = "<group>"; };
 		1C8DFB072BA38D1F00907A29 /* LockBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8DFB0A2BA38D1F00907A29 /* LockBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockBoxApp.swift; sourceTree = "<group>"; };
 		1C8DFB0C2BA38D1F00907A29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,9 +90,25 @@
 		1C8DFB212BA38D2100907A29 /* LockBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8DFB252BA38D2100907A29 /* LockBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockBoxUITests.swift; sourceTree = "<group>"; };
 		1C8DFB272BA38D2100907A29 /* LockBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C966DC22BA3C2F100943FF9 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		1C966DC42BA3C31700943FF9 /* MySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedule.swift; sourceTree = "<group>"; };
+		1CA6A58D2BA7C02D00B5ECBE /* ShieldUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA6A58E2BA7C02D00B5ECBE /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		1CA6A5902BA7C02E00B5ECBE /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		1CA6A5932BA7C02E00B5ECBE /* ShieldConfigurationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldConfigurationExtension.swift; sourceTree = "<group>"; };
+		1CA6A5952BA7C02E00B5ECBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA6A5962BA7C02E00B5ECBE /* ShieldUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C82E3EE2BA3D1270006A320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C82E3F42BA3D1270006A320 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C8DFB042BA38D1F00907A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,15 +130,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CA6A58A2BA7C02D00B5ECBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA6A58F2BA7C02E00B5ECBE /* ManagedSettings.framework in Frameworks */,
+				1CA6A5912BA7C02E00B5ECBE /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C82E3F22BA3D1270006A320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C82E3F32BA3D1270006A320 /* DeviceActivity.framework */,
+				1CA6A58E2BA7C02D00B5ECBE /* ManagedSettings.framework */,
+				1CA6A5902BA7C02E00B5ECBE /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C82E3F52BA3D1270006A320 /* LockBoxActivity */ = {
+			isa = PBXGroup;
+			children = (
+				1C82E3F62BA3D1270006A320 /* DeviceActivityMonitorExtension.swift */,
+				1C82E3F82BA3D1270006A320 /* Info.plist */,
+				1C82E3F92BA3D1270006A320 /* LockBoxActivity.entitlements */,
+			);
+			path = LockBoxActivity;
+			sourceTree = "<group>";
+		};
 		1C8DFAFE2BA38D1F00907A29 = {
 			isa = PBXGroup;
 			children = (
 				1C8DFB092BA38D1F00907A29 /* LockBox */,
 				1C8DFB1A2BA38D2100907A29 /* LockBoxTests */,
 				1C8DFB242BA38D2100907A29 /* LockBoxUITests */,
+				1C82E3F52BA3D1270006A320 /* LockBoxActivity */,
+				1CA6A5922BA7C02E00B5ECBE /* ShieldUI */,
+				1C82E3F22BA3D1270006A320 /* Frameworks */,
 				1C8DFB082BA38D1F00907A29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +181,8 @@
 				1C8DFB072BA38D1F00907A29 /* LockBox.app */,
 				1C8DFB172BA38D2100907A29 /* LockBoxTests.xctest */,
 				1C8DFB212BA38D2100907A29 /* LockBoxUITests.xctest */,
+				1C82E3F12BA3D1270006A320 /* LockBoxActivity.appex */,
+				1CA6A58D2BA7C02D00B5ECBE /* ShieldUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +190,15 @@
 		1C8DFB092BA38D1F00907A29 /* LockBox */ = {
 			isa = PBXGroup;
 			children = (
+				1C48000F2BA3D0A700505DB5 /* LockBoxDebug.entitlements */,
+				1C3082E42BA3C05800359E52 /* Info.plist */,
 				1C8DFB0A2BA38D1F00907A29 /* LockBoxApp.swift */,
 				1C8DFB0C2BA38D1F00907A29 /* ContentView.swift */,
 				1C8DFB0E2BA38D2000907A29 /* Assets.xcassets */,
 				1C8DFB102BA38D2000907A29 /* Preview Content */,
+				1C8A7BA62BA3B3E300947D1F /* LockBox.entitlements */,
+				1C966DC22BA3C2F100943FF9 /* MyModel.swift */,
+				1C966DC42BA3C31700943FF9 /* MySchedule.swift */,
 			);
 			path = LockBox;
 			sourceTree = "<group>";
@@ -127,9 +228,36 @@
 			path = LockBoxUITests;
 			sourceTree = "<group>";
 		};
+		1CA6A5922BA7C02E00B5ECBE /* ShieldUI */ = {
+			isa = PBXGroup;
+			children = (
+				1CA6A5932BA7C02E00B5ECBE /* ShieldConfigurationExtension.swift */,
+				1CA6A5952BA7C02E00B5ECBE /* Info.plist */,
+				1CA6A5962BA7C02E00B5ECBE /* ShieldUI.entitlements */,
+			);
+			path = ShieldUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C82E3F02BA3D1270006A320 /* LockBoxActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C82E3FF2BA3D1270006A320 /* Build configuration list for PBXNativeTarget "LockBoxActivity" */;
+			buildPhases = (
+				1C82E3ED2BA3D1270006A320 /* Sources */,
+				1C82E3EE2BA3D1270006A320 /* Frameworks */,
+				1C82E3EF2BA3D1270006A320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockBoxActivity;
+			productName = LockBoxActivity;
+			productReference = 1C82E3F12BA3D1270006A320 /* LockBoxActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1C8DFB062BA38D1F00907A29 /* LockBox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C8DFB2B2BA38D2100907A29 /* Build configuration list for PBXNativeTarget "LockBox" */;
@@ -137,10 +265,13 @@
 				1C8DFB032BA38D1F00907A29 /* Sources */,
 				1C8DFB042BA38D1F00907A29 /* Frameworks */,
 				1C8DFB052BA38D1F00907A29 /* Resources */,
+				1C8A7B992BA3AF2F00947D1F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1C82E3FB2BA3D1270006A320 /* PBXTargetDependency */,
+				1CA6A5982BA7C02E00B5ECBE /* PBXTargetDependency */,
 			);
 			name = LockBox;
 			productName = LockBox;
@@ -183,6 +314,23 @@
 			productReference = 1C8DFB212BA38D2100907A29 /* LockBoxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1CA6A58C2BA7C02D00B5ECBE /* ShieldUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA6A59A2BA7C02E00B5ECBE /* Build configuration list for PBXNativeTarget "ShieldUI" */;
+			buildPhases = (
+				1CA6A5892BA7C02D00B5ECBE /* Sources */,
+				1CA6A58A2BA7C02D00B5ECBE /* Frameworks */,
+				1CA6A58B2BA7C02D00B5ECBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShieldUI;
+			productName = ShieldUI;
+			productReference = 1CA6A58D2BA7C02D00B5ECBE /* ShieldUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,9 +338,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					1C82E3F02BA3D1270006A320 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					1C8DFB062BA38D1F00907A29 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -204,10 +355,13 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 1C8DFB062BA38D1F00907A29;
 					};
+					1CA6A58C2BA7C02D00B5ECBE = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 1C8DFB022BA38D1F00907A29 /* Build configuration list for PBXProject "LockBox" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -222,11 +376,20 @@
 				1C8DFB062BA38D1F00907A29 /* LockBox */,
 				1C8DFB162BA38D2100907A29 /* LockBoxTests */,
 				1C8DFB202BA38D2100907A29 /* LockBoxUITests */,
+				1C82E3F02BA3D1270006A320 /* LockBoxActivity */,
+				1CA6A58C2BA7C02D00B5ECBE /* ShieldUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C82E3EF2BA3D1270006A320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C8DFB052BA38D1F00907A29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,14 +413,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CA6A58B2BA7C02D00B5ECBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C82E3ED2BA3D1270006A320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C82E3F72BA3D1270006A320 /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C8DFB032BA38D1F00907A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1C8DFB0D2BA38D1F00907A29 /* ContentView.swift in Sources */,
+				1C966DC32BA3C2F100943FF9 /* MyModel.swift in Sources */,
+				1C966DC52BA3C31700943FF9 /* MySchedule.swift in Sources */,
 				1C8DFB0B2BA38D1F00907A29 /* LockBoxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,9 +459,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CA6A5892BA7C02D00B5ECBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA6A5942BA7C02E00B5ECBE /* ShieldConfigurationExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1C82E3FB2BA3D1270006A320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C82E3F02BA3D1270006A320 /* LockBoxActivity */;
+			targetProxy = 1C82E3FA2BA3D1270006A320 /* PBXContainerItemProxy */;
+		};
 		1C8DFB192BA38D2100907A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1C8DFB062BA38D1F00907A29 /* LockBox */;
@@ -292,9 +485,68 @@
 			target = 1C8DFB062BA38D1F00907A29 /* LockBox */;
 			targetProxy = 1C8DFB222BA38D2100907A29 /* PBXContainerItemProxy */;
 		};
+		1CA6A5982BA7C02E00B5ECBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CA6A58C2BA7C02D00B5ECBE /* ShieldUI */;
+			targetProxy = 1CA6A5972BA7C02E00B5ECBE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1C82E3FD2BA3D1270006A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LockBoxActivity/LockBoxActivity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7263362M97;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockBoxActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockBoxActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LockBox.LockBox.LockBoxActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C82E3FE2BA3D1270006A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LockBoxActivity/LockBoxActivity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7263362M97;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockBoxActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockBoxActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LockBox.LockBox.LockBoxActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1C8DFB292BA38D2100907A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,14 +669,17 @@
 		1C8DFB2C2BA38D2100907A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LockBox/LockBoxDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LockBox/Preview Content\"";
 				DEVELOPMENT_TEAM = 7263362M97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockBox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,6 +701,7 @@
 		1C8DFB2D2BA38D2100907A29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +710,7 @@
 				DEVELOPMENT_TEAM = 7263362M97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockBox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,9 +805,72 @@
 			};
 			name = Release;
 		};
+		1CA6A59B2BA7C02E00B5ECBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldUI/ShieldUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7263362M97;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LockBox.LockBox.ShieldUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CA6A59C2BA7C02E00B5ECBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldUI/ShieldUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7263362M97;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LockBox.LockBox.ShieldUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C82E3FF2BA3D1270006A320 /* Build configuration list for PBXNativeTarget "LockBoxActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C82E3FD2BA3D1270006A320 /* Debug */,
+				1C82E3FE2BA3D1270006A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1C8DFB022BA38D1F00907A29 /* Build configuration list for PBXProject "LockBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,6 +903,15 @@
 			buildConfigurations = (
 				1C8DFB322BA38D2100907A29 /* Debug */,
 				1C8DFB332BA38D2100907A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CA6A59A2BA7C02E00B5ECBE /* Build configuration list for PBXNativeTarget "ShieldUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA6A59B2BA7C02E00B5ECBE /* Debug */,
+				1CA6A59C2BA7C02E00B5ECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
